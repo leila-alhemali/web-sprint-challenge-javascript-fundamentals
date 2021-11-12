@@ -25,14 +25,30 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
+    These are all higher order functions that use callback functions as arguments. .map iterates over each item in an array and makes the same modification to it. If the programmer wanted to divide every item in an array, they would call .map on it. This function returns a new array. .reduce retrieves a single value from the dataset. It must have an initializer. An easy example is wanting to total the cost of all of items in a shoppingCart array. An important thing to remember about .reduce is it requires an initialized accumulator. .reduce returns a single value. .filter works on a true/false basis. Anything that meets the set conditions is returned into a new array. 
+
 
 2. Explain the difference between a callback and a higher order function.
 
+A higher order function receives a callback function as a parameter. A callback function is common function that is named such because it works in conjunction with the higher order function to achieve the program's goal. 
+
 3. Explain what a closure is.
+
+Closure is related to the scope of a function. With proper closure, the scope of the function is such that the program can access the needed variables at a later time. Closure happens when an inner function reaches into an outer function to grab a value defined in the outer function. 
 
 4. Describe the four principles of the 'this' keyword.
 
+.this creates an instance of a variable 
+
+window binding- This is not ideal. .this will default to the window. 
+implicit binding- This is the most common. .this is referring to what is 'left of the dot' when the function is invoked  
+explicit binding- This is when .this is explicitly pass in what we want .this to be refer to by using .call, .apply or .bind
+new binding- is used in constructor functions. It creates a new instance of a class and .this is bound to it. 
+
+
 5. Why do we need super() in an extended class?
+
+super() takes the place of object.prototype when creating a child class. It writes all of the parent classes' attributes on to the child class. It is an aspect of inheritance. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
