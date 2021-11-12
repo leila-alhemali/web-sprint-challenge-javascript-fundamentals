@@ -38,7 +38,7 @@ Closure is related to the scope of a function. With proper closure, the scope of
 
 4. Describe the four principles of the 'this' keyword.
 
-.this creates an instance of a variable 
+.this refers to the object it is called on. 
 
 window binding- This is not ideal. .this will default to the window. 
 implicit binding- This is the most common. .this is referring to what is 'left of the dot' when the function is invoked  
